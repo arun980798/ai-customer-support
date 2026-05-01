@@ -1,4 +1,4 @@
-const Message = require('../models/message.model');
+import Message from '../models/message.model.js';
 
 const sendMessage = async (req, res, next) => {
   try {
@@ -21,7 +21,7 @@ const getMessages = async (req, res, next) => {
   }
 };
 
-module.exports = {
+export default {
   sendMessage,
   getMessages,
 };

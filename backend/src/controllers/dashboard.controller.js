@@ -1,4 +1,4 @@
-const Ticket = require('../models/ticket.model');
+import Ticket from '../models/ticket.model.js';
 
 const getOverview = async (req, res, next) => {
   try {
@@ -11,6 +11,6 @@ const getOverview = async (req, res, next) => {
   }
 };
 
-module.exports = {
+export default {
   getOverview,
 };

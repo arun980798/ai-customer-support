@@ -1,4 +1,4 @@
-const Ticket = require('../models/ticket.model');
+import Ticket from '../models/ticket.model.js';
 
 const createTicket = async (req, res, next) => {
   try {
@@ -35,7 +35,7 @@ const updateTicket = async (req, res, next) => {
   }
 };
 
-module.exports = {
+export default {
   createTicket,
   getTickets,
   updateTicket,

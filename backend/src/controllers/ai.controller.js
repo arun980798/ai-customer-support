@@ -1,4 +1,4 @@
-const aiService = require('../services/ai.service');
+import aiService from '../services/ai.service.js';
 
 const askAi = async (req, res, next) => {
   try {
@@ -13,6 +13,6 @@ const askAi = async (req, res, next) => {
   }
 };
 
-module.exports = {
+export default {
   askAi,
 };
