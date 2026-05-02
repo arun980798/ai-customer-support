@@ -25,6 +25,7 @@ export const registerValidator = [
         .notEmpty().withMessage("Password is required")
         .isLength({ min: 6 }).withMessage("Password must be at least 6 characters"),
 
+    body("companyName").notEmpty().withMessage("company name is required").isString(),
     validate
 ];
 
